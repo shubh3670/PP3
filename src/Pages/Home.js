@@ -26,7 +26,7 @@ const Home = () => {
     setCurrentImage((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
   return (
-    <motion.div className="container " initial={{width:0}}
+    <motion.div className="container " initial={{width:"100%"}}
     animate={{width:"100%"}}
     exit={{x:"100%"}}>
       

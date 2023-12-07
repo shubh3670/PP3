@@ -6,18 +6,18 @@ const Navbar = () => {
     <nav className="bg-black text-white p-4">
       <ul className="flex space-x-4">
         <li>
-          <NavLink
-            to="/home"
-            activeClassName="text-red-500"
-            className="text-white hover:text-gray-300"
-          >
-            HOME
-          </NavLink>
+        <NavLink
+  to="/home"
+  activeClassName="text-red-500 border-b-2 border-red-500"
+  className="text-white hover:text-gray-300"
+>
+  HOME
+</NavLink>
         </li>
         <li>
           <NavLink
             to="/skills"
-            activeClassName="text-red-500"
+            activeClassName="text-red-500 border-b-2 border-red-500"
             className="text-white hover:text-gray-300"
           >
             SKILLS
@@ -26,7 +26,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/project"
-            activeClassName="text-red-500"
+            activeClassName="text-red-500 border-b-2 border-red-500"
             className="text-white hover:text-gray-300"
           >
             PROJECT
@@ -35,7 +35,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/brief"
-            activeClassName="text-red-500"
+            activeClassName="text-red-500 border-b-2 border-red-500"
             className="text-white hover:text-gray-300"
           >
             BRIEF

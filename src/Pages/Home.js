@@ -1,12 +1,13 @@
-import React from 'react'
-import IMG5 from "../assets/IMG5.png"
-import IMG2 from "../assets/IMG2.png"
-import IMG3 from "../assets/IMG3.png"
-import IMG4 from "../assets/IMG4.png"
-import IMG1 from "../assets/IMG1.png"
+import React from 'react';
+import IMG5 from "../assets/IMG5.png";
+import IMG2 from "../assets/IMG2.png";
+import IMG3 from "../assets/IMG3.png";
+import IMG4 from "../assets/IMG4.png";
+import IMG1 from "../assets/IMG1.png";
 import { useState } from 'react';
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft } from "react-icons/md";
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion';
+import NavBar from "../components/NavBar";
 
 
 const Home = () => {
@@ -29,6 +30,8 @@ const Home = () => {
     <motion.div className="container " initial={{width:"100%"}}
     animate={{width:"100%"}}
     exit={{x:"100%"}}>
+      
+      <NavBar number="1"/>
       
       <div className="flex items-center bg-gray-200">
         <div className="flex-1">

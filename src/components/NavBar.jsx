@@ -1,15 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const number=props.number;
   return (
     <nav className="bg-black text-white p-4">
       <ul className="flex space-x-4">
         <li>
         <NavLink
   to="/home"
-  activeClassName="text-red-500 border-b-2 border-red-500"
-  className="text-white hover:text-gray-300"
+  className={`${
+    number==="1" ? "text-red-500" : "text-white" }`}
 >
   HOME
 </NavLink>
@@ -17,8 +18,8 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/skills"
-            activeClassName="text-red-500 border-b-2 border-red-500"
-            className="text-white hover:text-gray-300"
+            className={` ${
+              number==="2" ? "text-red-500" : "text-white" }`}
           >
             SKILLS
           </NavLink>
@@ -26,8 +27,8 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/project"
-            activeClassName="text-red-500 border-b-2 border-red-500"
-            className="text-white hover:text-gray-300"
+            className={` ${
+              number==="3" ? "text-red-500" : "text-white" }`}
           >
             PROJECT
           </NavLink>
@@ -35,8 +36,8 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/brief"
-            activeClassName="text-red-500 border-b-2 border-red-500"
-            className="text-white hover:text-gray-300"
+            className={` ${
+              number==="4" ? "text-red-500" : "text-white" }`}
           >
             BRIEF
           </NavLink>

@@ -1,8 +1,10 @@
   import React from 'react';
   import {motion} from 'framer-motion'
+  import NavBar from "../components/NavBar";
 
   const Brief = () => {
     return (
+      <><NavBar number="4"/>
       <motion.div className="flex flex-col items-center justify-center min-h-screen bg-blue-100"  initial={{width:0}}
       animate={{width:"100%"}}
       exit={{x:"100%"}}>
@@ -44,7 +46,7 @@
             </li>
           </ul>
         </div>
-      </motion.div>
+      </motion.div></>
     );
   };
 

@@ -5,7 +5,7 @@ import Coffee from '../assets/Coffee.png';
 import TravelImage from '../assets/Travel.png';
 import Insurance from '../assets/insurance.png';
 import {motion} from 'framer-motion'
-
+import NavBar from '../components/NavBar';
 Modal.setAppElement('#root'); // Set the root element for the modal
 
 const Project = () => {
@@ -50,6 +50,7 @@ const Project = () => {
   };
 
   return (
+    <><NavBar number="3"/>
     <motion.div className="bg-blue-100 p-8 min-h-screen"  initial={{width:0}}
     animate={{width:"100%"}}
     exit={{x:"100%"}}>
@@ -95,7 +96,7 @@ const Project = () => {
           </div>
         )}
       </Modal>
-    </motion.div>
+    </motion.div></>
   );
 };
 

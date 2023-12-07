@@ -4,13 +4,16 @@ import { HiMiniBars3 } from "react-icons/hi2";
 import { HiOutlineBars4 } from "react-icons/hi2";
 import { GiProgression } from "react-icons/gi";
 import {motion} from 'framer-motion'
+import NavBar from '../components/NavBar';
 
 
 const Skills = () => {
   return (
+    <>   <NavBar number="2"/>
     <motion.div className="bg-blue-100 text-white p-8 h-screen"  initial={{width:0}}
     animate={{width:"100%"}}
     exit={{x:"100%"}}>
+     
       <h1 className="text-5xl font-bold mb-6 text-center text-yellow-500 mt-14">My Skills</h1>
       <h2 className="text-2xl mb-8 text-center font-bold text-black">
         BELOW ARE THE REPRESENTATION OF MY SKILLS IN DIFFERENT PROGRAMMING LANGUAGES THAT I HAVE LEARNED.
@@ -49,7 +52,7 @@ const Skills = () => {
         <GiProgression className="text-8xl text-black mx-auto" />
       </div>
 
-    </motion.div>
+    </motion.div></>
   );
 };
 

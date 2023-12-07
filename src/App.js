@@ -10,7 +10,6 @@ function App() {
   return (
     <Router>
       <div>
-        <NavBar />
        <AnimatedRoutes/>
       </div>
     </Router>
